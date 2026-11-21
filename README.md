@@ -1,90 +1,64 @@
-# 🤖 AI Multi-Domain Chatbot with Concept Visualization
+# 🏥 MediGuide – AI Healthcare Research Assistant
 
-## 🚀 Overview
+## Overview
 
-This project is an advanced AI chatbot capable of:
+MediGuide is an AI-powered healthcare research assistant that uses Retrieval-Augmented Generation (RAG), multilingual support, image understanding, and knowledge graph visualization to help users explore complex healthcare and research topics.
 
-* Answering complex domain-specific questions (based on arXiv dataset)
-* Multilingual interaction (auto language detection + translation)
-* Image understanding using Google Gemini API
-* Concept extraction using LLM (Mistral via Ollama)
-* Dynamic **Knowledge Graph Visualization**
+## Key Features
 
----
+### 1. Healthcare Research Assistant
+- Uses RAG to retrieve relevant information from medical and research datasets.
+- Answers domain-specific questions using retrieved context.
+- Supports conversational follow-up questions.
 
-## 🧠 Key Features
+### 2. Multilingual Support
+- Automatically detects the user's language.
+- Supports multiple languages, including Tamil and Hindi.
+- Translates queries and responses to enable multilingual interaction.
 
-### 🔹 1. Domain Expert Chatbot
+### 3. Image Understanding
+- Accepts image uploads.
+- Uses Google Gemini API to analyze and describe uploaded images.
+- Supports image-based queries.
 
-* Uses RAG (Retrieval-Augmented Generation)
-* Trained on arXiv research papers
-* Handles follow-up questions
+### 4. Dynamic Concept Visualization
+- Extracts key concepts using an LLM.
+- Builds interactive knowledge graphs dynamically.
+- Visualizes relationships between concepts, such as "uses", "contains", and "depends on".
 
-### 🔹 2. Multilingual Support
+### 5. Research Explorer
+- Searches and retrieves relevant research content.
+- Includes arXiv research papers alongside healthcare information.
 
-* Automatic language detection
-* Supports multiple languages (Tamil, Hindi, etc.)
-* Translates input/output seamlessly
+## Tech Stack
 
-### 🔹 3. Multimodal Capabilities
+- **Frontend:** Streamlit
+- **Language:** Python
+- **LLMs:** Mistral via Ollama, Google Gemini API
+- **RAG:** Sentence Transformers, NumPy, Scikit-learn
+- **Knowledge Graph:** NetworkX, PyVis
+- **Other:** Google Gemini API, multilingual translation, VADER Sentiment Analysis
 
-* Image input understanding (Gemini API)
-* Text + image combined reasoning
-
-### 🔹 4. Concept Visualization (🔥 Highlight)
-
-* Extracts key concepts using LLM
-* Builds a knowledge graph dynamically
-* Shows relationships like:
-
-  * "uses"
-  * "contains"
-  * "depends on"
-
-### 🔹 5. Research Explorer
-
-* Search and retrieve relevant research content
-
----
-
-## 🛠️ Tech Stack
-
-* Streamlit
-* Python
-* Ollama (Mistral LLM)
-* Google Gemini API
-* NetworkX (Graph Visualization)
-
----
-
-## ▶️ How to Run
+## Run Locally
 
 ```bash
+git clone https://github.com/muthu-aravind-007/ai-multi-domain-chatbot.git
+cd ai-multi-domain-chatbot
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
----
+## Example Queries
 
-## 📊 Example Queries
+- Explain how diabetes develops.
+- What is machine learning?
+- Explain the role of insulin in the human body.
+- Upload an image and ask for an explanation.
 
-* Explain Transformers
-* Explain Artificial Intelligence
-* What is Machine Learning?
-* Upload an image → get description
+## Project Outcome
 
----
-
-## 🎯 Outcome
-
-A chatbot that:
-
-* Explains complex research concepts
-* Handles multilingual queries
-* Generates real-time concept graphs
-
----
+MediGuide combines healthcare information retrieval, multilingual interaction, image understanding, and interactive concept visualization in one AI-powered application.
 
 ## 👤 Author
 
-A. Muthu Aravind
+**A. Muthu Aravind**
