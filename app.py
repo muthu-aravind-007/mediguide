@@ -71,14 +71,6 @@ if search_query:
     for r in results[:5]:
         st.sidebar.markdown(f"• {r[:120]}...")
 
-provider = st.sidebar.selectbox(
-    "LLM Provider",
-    [
-        "Ollama",
-        "Gemini"
-    ]
-)
-
 
 # ---------------- IMAGE INPUT ---------------- #
 uploaded_file = st.file_uploader("📷 Upload an image", type=["png", "jpg", "jpeg"])

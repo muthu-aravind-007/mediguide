@@ -8,7 +8,7 @@ from PIL import Image
 load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY")
 
-print("🔥 USING GEMINI FILE:", __file__)
+print("USING GEMINI FILE:", __file__)
 
 
 # -----------------------------
