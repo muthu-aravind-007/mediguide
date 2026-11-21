@@ -11,7 +11,6 @@ from modules.sentiment.sentiment import analyze_sentiment
 from modules.rag.loader import load_all_documents
 from modules.rag.retriever import VectorStore
 from modules.routing.router import detect_intent, filter_docs_by_intent
-from modules.llm.provider import generate
 from modules.multilingual.translate import detect_language, translate_to_english, translate_from_english
 from modules.rag.updater import auto_update
 from modules.multimodal.gemini import analyze_image
