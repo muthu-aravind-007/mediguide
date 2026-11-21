@@ -19,9 +19,9 @@ from modules.visualization.concept_graph import extract_concepts, build_graph
 
 # ---------------- UI CONFIG ---------------- #
 st.set_page_config(
-    page_title="AI Research Assistant",
+    page_title="MediGuide",
     layout="wide",
-    page_icon="🧠"
+    page_icon="🏥"
 )
 
 st.markdown("""
@@ -44,8 +44,8 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("🧠 AI Research Assistant")
-st.caption("Explain complex concepts • Explore research • Visualize knowledge")
+st.title("🏥 MediGuide")
+st.caption("Your AI Healthcare Research Assistant")
 
 
 # ---------------- INIT SYSTEM ---------------- #
