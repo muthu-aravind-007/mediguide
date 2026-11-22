@@ -5,8 +5,7 @@ from pyvis.network import Network
 import streamlit.components.v1 as components
 import tempfile
 import os
-import re
-
+from modules.llm.gemini import generate
 from modules.sentiment.sentiment import analyze_sentiment
 from modules.rag.loader import load_all_documents
 from modules.rag.retriever import VectorStore
@@ -256,10 +255,7 @@ if final_input:
     {context}
     """
 
-        response_en = generate(
-            prompt,
-            provider.lower()
-        )
+        response_en = generate(prompt)
         response = translate_from_english(response_en, lang) if lang != "en" else response_en
 
         graph_data = None
